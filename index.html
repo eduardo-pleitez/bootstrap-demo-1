@@ -9,9 +9,125 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    #uniqueHover a:hover, .navbar a:hover{
+      background-color: #dc3545;
+      color: #dc3545;
+    }
+  </style>
 </head>
 <body>
-  
-  
+
+  <nav class="navbar navbar-expand-sm bg-primary justify-content-between">
+    <a href="/" class="navbar-brand text-white ml-5">Company name</a>
+
+    <ul class="navbar-nav mr-5">
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle text-white font-weight-bold mr-5" id="navbardrop" data-toggle="dropdown" role="button">Services</a>
+        <div class="dropdown-menu bg-primary" id="uniqueHover">
+          <a href="#" class="dropdown-item text-white font-weight-bold">Service 1</a>
+          <a href="#" class="dropdown-item text-white font-weight-bold">Service 2</a>
+          <a href="#" class="dropdown-item text-white font-weight-bold">Service 3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="#about" class="nav-link text-white font-weight-bold mr-5">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a href="#faq" class="nav-link text-white font-weight-bold mr-5">FAQ</a>
+      </li>
+    </ul>
+  </nav>
+
+  <img src="/images/bgImage.jpg" alt="" style="width: 100%; height:600px;">
+
+  <div class="jumbotron m-0">
+    <div class="container-sm pt-3" id="about">
+      <h1 class="bg-primary text-white p-2"><u>About us</u></h1>
+      <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit doloremque aliquid, dolores quisquam quasi sapiente iusto amet praesentium incidunt, ex eaque quidem rerum aspernatur atque vel officia cumque reprehenderit et!
+      Aliquid, minus voluptas architecto ipsa distinctio voluptatibus accusamus, voluptate illum repudiandae porro voluptatum atque facilis beatae in. Veniam rem amet, quaerat cumque maiores officiis accusamus nihil voluptatum distinctio consequuntur est.
+      Ipsam unde veritatis illo voluptatum fugit esse non explicabo modi recusandae deleniti architecto quaerat cumque molestias, voluptas numquam. Aut aperiam magni neque recusandae dolor rem voluptatibus blanditiis accusamus quidem dolores.
+      Ea, perferendis veniam! Laborum eum beatae soluta rem repellat, cupiditate esse molestiae modi tenetur iure. Delectus dignissimos ex nam earum dolorem sint qui unde, praesentium ducimus porro sed eaque aspernatur?
+      Vero ea at porro quisquam nostrum architecto odio odit sequi numquam, suscipit alias aspernatur placeat, nemo quas fugit repudiandae voluptatem nisi nihil iusto ratione amet obcaecati. Itaque suscipit iste facere!
+      Quibusdam commodi temporibus aperiam facilis, labore recusandae! Similique hic dicta itaque neque, dolorem sit. Vitae deserunt corporis sit quis, cupiditate id aliquid ea odit eum aliquam numquam dolore, minima nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quam illo! Ipsam, libero! Libero aut amet nisi et accusamus sequi, saepe adipisci magnam ut totam atque quod magni in iste.
+      Aspernatur praesentium velit, minus amet nisi, assumenda architecto ab mollitia vitae, omnis recusandae. Nulla labore hic cum facilis dolorum exercitationem aperiam tempore quos in suscipit, itaque alias officiis neque praesentium.
+      Rem modi quae repudiandae, reiciendis tenetur corrupti numquam tempore quidem eaque quas quasi eum soluta provident culpa iste sit quos. Quae corporis autem obcaecati eaque beatae, sed dignissimos illum quaerat.
+      Voluptatum, dignissimos voluptas qui praesentium nihil tempore dolores quo delectus illum, accusantium magni molestiae earum sapiente debitis repellendus. Facilis inventore deleniti sapiente assumenda odit tenetur magni excepturi quisquam mollitia provident.
+      Velit harum, vel similique aspernatur debitis at, molestias voluptate, architecto beatae eaque assumenda? Autem rem error molestias ex quibusdam, quaerat atque nam tenetur maiores, dignissimos reprehenderit harum sit, placeat beatae.
+      Libero unde asperiores nam, eaque eveniet, qui officiis alias dignissimos voluptatum, maiores omnis impedit minima ex. Iusto ducimus vero enim nobis aut soluta consequatur tempora perspiciatis laborum? Minima, unde optio!</p>
+    </div>
+  </div>
+
+  <div class="jumbotron m-0">
+    <div class="container-sm pt-3 pb-5" id="faq">
+      <h1 class="bg-primary text-white p-2"><u>FAQ</u></h1>
+
+      <div id="accordion" class="p-5">
+        <div class="card bg-primary text-white">
+          <div class="card-header">
+            <a href="#q1" class="card-link text-white font-weight-bold" data-toggle="collapse"><u>Question 1</u></a>
+          </div>
+          <div class="collapse show" id="q1" data-parent="#accordion">
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente porro quis vero eligendi deserunt soluta facilis consectetur voluptatum unde. Est repellendus illo numquam ducimus quam perferendis sunt eligendi praesentium asperiores.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-primary text-white">
+          <div class="card-header">
+            <a href="#q2" class="card-link text-white font-weight-bold" data-toggle="collapse"><u>Question 2</u></a>
+          </div>
+          <div class="collapse" id="q2" data-parent="#accordion">
+            <div class="card-body">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo repudiandae adipisci impedit ab? Nam necessitatibus expedita facilis, illo tempore, deserunt harum ratione quidem neque maxime quae, mollitia ea quo cupiditate?</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-primary text-white">
+          <div class="card-header">
+            <a href="#q3" class="card-link text-white font-weight-bold" data-toggle="collapse"><u>Question 3</u></a>
+          </div>
+          <div class="collapse" id="q3" data-parent="#accordion">
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nesciunt sed excepturi praesentium, vitae incidunt iste laboriosam! Recusandae corporis laborum unde? Aliquam, praesentium possimus unde ipsa sapiente fugit facilis id!</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-primary text-white">
+          <div class="card-header">
+            <a href="#q4" class="card-link text-white font-weight-bold" data-toggle="collapse"><u>Question 4</u></a>
+          </div>
+          <div class="collapse" id="q4" data-parent="#accordion">
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus autem ut voluptatibus tenetur dicta quos corrupti dolore. Deleniti quos quibusdam aliquam natus ullam quis ab, magni in illo. Dicta.
+              Recusandae, fuga. Eos saepe temporibus repellat est, ullam odio possimus dignissimos, enim quae expedita accusamus odit. Alias, aspernatur inventore unde tenetur deserunt praesentium facilis repellendus maxime laborum sed voluptate! Accusantium!</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-primary text-white">
+          <div class="card-header">
+            <a href="#q5" class="card-link text-white font-weight-bold" data-toggle="collapse"><u>Question 5</u></a>
+          </div>
+          <div class="collapse" id="q5" data-parent="#accordion">
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam amet eveniet, tempora ipsa autem placeat dolore nesciunt, officia dicta eaque debitis provident! Sint, mollitia praesentium quae optio delectus voluptatibus ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis neque, vero corporis consequuntur, quas, autem modi minus perspiciatis provident nostrum praesentium temporibus excepturi est quibusdam. Qui maiores incidunt dicta laboriosam?</p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-primary text-white">
+          <div class="card-header">
+            <a href="#q6" class="card-link text-white font-weight-bold" data-toggle="collapse"><u>Question 6</u></a>
+          </div>
+          <div class="collapse" id="q6" data-parent="#accordion">
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatibus ut perspiciatis deleniti voluptate animi alias. Debitis nostrum iusto consequuntur, deleniti et numquam possimus cupiditate molestiae quas ea officiis voluptatem?
+              Harum exercitationem temporibus amet, debitis officia neque tempore, suscipit molestias vero, voluptatibus modi consequuntur impedit. Rem, omnis doloribus totam illum reprehenderit quas tempora? Architecto autem ab minima odit accusamus animi?</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </body>
 </html>
